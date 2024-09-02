@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Guess the Number Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎯 Guess the Number</h1>
+        <input id="guessnumber" type="number" min="1" max="10" placeholder="1-10">
+        <button onclick="check()">🔍 Check</button>
+        <p id="result">You are ❌ Wrong/✔️ Right</p>
+        <p id="score">🏆 Score: 10</p>
+        
+        <!-- How to Play Link -->
+        <p><a id="howToPlayLink" href="#">How to Play</a></p>
+    </div>
+
+    <!-- How to Play Modal -->
+    <div id="howToPlayModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>How to Play</h2>
+            <ol>
+                <li>Start the Game: Enter a number between 1 and 10 in the input box.</li>
+                <li>Submit Your Guess: Click the "Check" button to see if your guess matches the randomly generated number.</li>
+                <li>Check the Result: You’ll get a message indicating whether you guessed correctly or not, and your score will be updated accordingly.</li>
+                <li>Try Again: Keep guessing until you either win or your score runs out!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
